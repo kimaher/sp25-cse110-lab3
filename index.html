@@ -103,35 +103,24 @@
           <span>Name:</span>
           <input type="text"><br><br>
 
-          <label>Was the agenda followed?</label><br>
-          <input type="radio" id="yes" name="agenda" value="yes">
-          <label for="yes">Yes</label><br>
-          <input type="radio" id="no" name="agenda" value="no">
-          <label for="no">No</label><br><br>
-
-          <label>Topics Covered:</label><br>
-          <input type="checkbox" id="goals" name="topics" value="goals">
-          <label for="goals">Project Goals</label><br>
-          <input type="checkbox" id="design" name="topics" value="design">
-          <label for="design">Design</label><br><br>
-
-          <label for="favorite">Favorite Topic:</label>
-          <select id="favorite" name="favorite-topic">
+          <span>Favorite Topic:</span>
+          <select>
             <option value="goals">Goals</option>
             <option value="design">Design</option>
             <option value="tools">Tools</option>
+            <option value="video">Video</option>
           </select><br><br>
 
-          <label for="tool">Preferred Tool:</label>
-          <input list="tools" id="tool" name="tool-choice">
-          <datalist id="tools">
-            <option value="Trello">
-            <option value="Notion">
-            <option value="Slack">
+          <span>Preferred Task:</span>
+          <input list="tasks">
+          <datalist id="tasks">
+            <option value="Coding">
+            <option value="Managing">
+            <option value="Planning">
           </datalist><br><br>
 
-          <label for="comments">Additional Comments:</label><br>
-          <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+          <span>Comments:</span><br>
+          <textarea name="comments" id="comments" rows="6" cols="30"></textarea>
 
           <button type="submit">Submit</button>
         </fieldset>
@@ -139,9 +128,9 @@
     </section>
 
   </main>
-
+  
   <footer>
-    <p>Created by the Pomodoro Team | April 2025</p>
+    <p>This is the Footer</p>
   </footer>
 
 </body>
