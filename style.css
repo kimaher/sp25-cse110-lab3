@@ -1,0 +1,182 @@
+body {
+    background-color: crimson;
+}
+
+h1 {
+    color: #FF5733;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.bcolors {
+    background-color: aquamarine;
+    padding: 1em;
+    border: 5px dashed green;
+}
+
+.bcolors p {
+    margin: 5px 10px 20px 25px;
+}
+
+.agenda {
+    position: relative;
+    padding: 1rem;
+}
+
+.agenda input[type="checkbox"] {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    accent-color: blue;
+}
+
+.agenda li:hover {
+    background-color: white;
+}
+
+.agenda h2 {
+    color: chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1.5cm;
+    text-decoration: overline;
+}
+
+/* Style the ordered list (list1) */
+.list1 {
+    list-style-type: circle;
+    padding-left: 50px;
+}
+
+.list1 li {
+    font-size: 2vb;
+    color: blue;
+    margin-bottom: 0.5in;
+}
+
+.unfinished {
+    padding: 20px;
+    background-color: beige;
+    border-style: double;
+    border-radius: 10px;
+    border-color: aqua;
+    border-width: 6px;
+
+    p {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        text-align: center;
+        font-family: "Bungee Spice", sans-serif;
+    }
+
+    &:hover {
+        background-color: bisque;
+    }
+}
+
+.new-business {
+    background-color: burlywood;
+}
+
+.new-business h2, .new-business p {
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+    height: 150px;
+    max-width: 600px;
+    min-width: 200px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+section li {
+    color: purple;
+}
+
+ul > li {
+    list-style-type: square;
+}
+
+h2 ~ p {
+    color: orange;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+ol.list1 {
+    font-style: italic;
+}
+
+section:has(input[type="checkbox"]) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 6px dotted limegreen;
+    border-radius: 10px;
+}
+
+.new-business span {
+    display: none;
+}
+
+.meet {
+    position: sticky;
+    top: 30px;
+    margin-right: 2cm;
+    text-align: right;
+}
+
+button:hover {
+    color: red;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.flexc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 150px;
+    background-color: rebeccapurple;
+    border: 4px solid yellow;
+    flex-direction: row;
+}
+
+.flexitem {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    gap: 50px;
+    place-items: center;
+    padding: 20px;
+    background-color: gold;
+}
+  
+.mediaitem {
+    background-color: pink;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    body{
+        padding: 10px;
+    }
+}
+
+#form {
+    border-radius: 20px;
+    border: 4px solid yellow;
+}
+
+* {
+    font-weight: 300;
+}

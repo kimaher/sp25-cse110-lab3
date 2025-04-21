@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaB2-110</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon-32x32.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,7 +25,7 @@
 
   <main>
 
-    <section>
+    <section class="meet">
       <h2>Meeting Date</h2>
       <p><strong>April 13, 2025</strong></p>
     </section>
@@ -40,21 +42,35 @@
 
     <hr>
 
-    <section id="agenda">
+    <div class="bcolors">
+      <h2>Background Colors</h2>
+      <p>Paragraph under the backgroud colors.</p>
+    </div>
+
+    <section class="agenda">
       <h2>Agenda</h2>
-      <ol>
-        <li>Project Goals</li>
-        <li>Assign Roles</li>
-        <li>Assign Tasks</li>
+      <ol class="list1">
+        <li>
+          <input type="checkbox" id="goal">
+          <label for="goal">Project Goals</label>
+        </li>
+        <li>
+          <input type="checkbox" id="roles">
+          <label for="roles">Assign Roles</label>
+        </li>
+        <li>
+          <input type="checkbox" id="tasks">
+          <label for="tasks">Assign Tasks</label>
+        </li>
       </ol>
     </section>
 
-    <section id="unfinished">
+    <section class="unfinished">
       <h2>Unfinished Business</h2>
       <p>The team is still deciding on which <b>framework</b> to use.</p>
     </section>
 
-    <section id="new-business">
+    <section class="new-business">
       <h2>New Business</h2>
       <p>We <em>emphasized</em> the importance of task 1 completion before week 4.</p>
       <p>Jameson mentioned an idea to <i>possibly</i> work in pair.</p>
@@ -64,9 +80,11 @@
       </div>
     </section>
 
-    <section>
-      <h2>Miscellaneous</h2>
-      <p>John asked if he can go home.</p>
+    <section class="flexc">
+      <h2 class="flexitem">Miscellaneous</h2>
+      <p class="flexitem">John asked if he can go home.</p>
+      <p class="flexitem">Extra paragraph.</p>
+      <p class="flexitem">And one more.</p>
     </section>
 
     <section>
@@ -74,16 +92,16 @@
       <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2F0fGVufDB8fDB8fHww" alt="Diagrams" width="300">
     </section>
 
-    <section id="media">
-      <h2>Meeting Recordings</h2>
+    <section class="media">
+      <h2 class="mediaitem">Meeting Recordings</h2>
 
-      <h3>Audio</h3>
-      <audio controls>
+      <h3 class="mediaitem">Audio</h3>
+      <audio class="mediaitem" controls>
         <source src="IMG_7255.mp3" type="audio/mpeg">
       </audio>
 
-      <h3>Video</h3>
-      <video controls width="300">
+      <h3 class="mediaitem">Video</h3>
+      <video class="mediaitem" controls width="300">
         <source src="IMG_7255.mp4" type="video/mp4">
       </video>
     </section>
