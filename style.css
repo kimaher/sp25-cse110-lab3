@@ -59,16 +59,15 @@ h1 {
     border-style: double;
     border-radius: 10px;
     border-color: aqua;
-    border-width: 6px;
+    border-width: 6px
+}
 
-    p {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        text-align: center;
-        font-family: "Bungee Spice", sans-serif;
-    }
-
+.unfinished p {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-family: "Bungee Spice", sans-serif;
 }
 
 .new-business {
